@@ -1,0 +1,76 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+     linkcolor={black},
+     citecolor={black},
+     urlcolor={blue!80!black}
+}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage[shortlabels]{enumitem}
+% \usepackage{parskip}
+\usepackage{emptypage}
+\usepackage{subcaption}
+\usepackage{multicol}
+
+% Format/layout
+\usepackage{layout}
+\usepackage{geometry}
+\geometry{
+    letterpaper,
+    inner=1in,
+    top=1in,
+    outer=1in,
+    bottom=1in,
+    marginparwidth=0.5in
+}
+
+
+%%%%%%%%%%%%%%%%
+%%    Math    %%
+%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{cancel}
+\usepackage{bm}
+
+% Sets
+\newcommand\N{\ensuremath{\mathbb{N}}} % Natural Numbers
+\newcommand\Z{\ensuremath{\mathbb{Z}}} % Integers
+\newcommand\D{\ensuremath{\mathbb{D}}} % Decimal Numbers
+\newcommand\Q{\ensuremath{\mathbb{Q}}} % Rational Numbers
+\newcommand\R{\ensuremath{\mathbb{R}}} % Real Numbers
+\newcommand\C{\ensuremath{\mathbb{C}}} % Complex Numbers
+\renewcommand\O{\ensuremath{\emptyset}} % Empty Set
+
+\usepackage{systeme} % Systems of eqns.
+
+\let\implies\Rightarrow
+\let\impliedby\Leftarrow
+\let\iff\Leftrightarrow
+
+
+% horizontal rule
+\newcommand\hr{
+    \noindent\rule[0.5ex]{\linewidth}{0.5pt}
+}
+
+
+% hide parts
+\newcommand\hide[1]{}
+
+
+
+% si unitx
+\usepackage{siunitx}
+\sisetup{locale = US}
+\newcommand\mat[1]{\mathbf{#1}}
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\fancyhead[LE]{\thechapter}
