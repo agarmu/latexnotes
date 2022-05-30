@@ -195,7 +195,15 @@
         linecolor=Orange, backgroundcolor=Orange!25
     }
 ]{thmorangebox}
-\declaretheorem[style=thmorangebox, numbered=no, name=Remark]{remark}
+\declaretheoremstyle[
+    headfont=\bfseries\sffamily\color{Dandelion}, bodyfont=\normalfont,
+    mdframed={
+        linewidth=2pt,
+        rightline=false, topline=false, bottomline=false,
+        linecolor=Dandelion, backgroundcolor=Dandelion!25
+    }
+]{thmdandelionbox}
+\declaretheorem[style=thmdandelionbox, numbered=no, name=Remark]{remark}
 \declaretheorem[style=thmorangebox, numbered=no, name=Note]{note}
 
 % figure support
