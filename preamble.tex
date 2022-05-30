@@ -194,3 +194,20 @@
 ]{thmorangebox}
 \declaretheorem[style=thmorangebox, numbered=no, name=Remark]{remark}
 \declaretheorem[style=thmorangebox, numbered=no, name=Note]{note}
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% %http://tex.stackexchange.com/questions/76273/multiple-pdfs-with-page-group-included-in-a-single-page-warning
+\pdfsuppresswarningpagegroup=1
+
+
+\author{Gilles Castel}
