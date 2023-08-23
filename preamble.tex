@@ -3,6 +3,7 @@
 \usepackage{textcomp}
 \usepackage{url}
 \usepackage{hyperref}
+\usepackage[backend=biber]{biblatex}
 \hypersetup{
     colorlinks,
      linkcolor={black},
@@ -17,7 +18,7 @@
 % \usepackage{parskip}
 \usepackage{emptypage}
 \usepackage{subcaption}
-\usepackage{multicol}
+\usepackage{multirow, multicol}
 \usepackage[cmyk,usenames,dvipsnames,table]{xcolor}
 
 % Format/layout
@@ -62,11 +63,14 @@
 \usepackage{titlesec}
 \titleformat{\chapter}{\centering\bfseries\Huge}{\thechapter}{0.5em}{}
 
+\usepackage{setspace}
+
+% \usepackage{fontspec}
 %%%%%%%%%%%%%%%%
 %%    Math    %%
 %%%%%%%%%%%%%%%%
 
-\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb, commath}
 \usepackage{cancel}
 \usepackage{bm}
 
@@ -78,6 +82,10 @@
 \newcommand\R{\ensuremath{\mathbb{R}}} % Real Numbers
 \newcommand\C{\ensuremath{\mathbb{C}}} % Complex Numbers
 \renewcommand\O{\ensuremath{\emptyset}} % Empty Set
+
+% Make vector overlines longer
+\renewcommand\vec{\overrightarrow} 
+
 
 \usepackage{systeme} % Systems of eqns.
 
@@ -102,6 +110,10 @@
 \sisetup{locale = US}
 \newcommand\mat[1]{\mathbf{#1}}
 
+% code blocks
+\usepackage{listings, xcolor}
+
+
 % colored box environments
 
 \usepackage{tikz}
@@ -113,7 +125,6 @@
 \tikzset{
     force/.style={thick, {Circle[length=2pt]}-stealth, shorten <=-1pt}
 }
-
 
 
 \usepackage{thmtools, tcolorbox}
